@@ -32,11 +32,11 @@ public class Grades<T extends Comparable<T>> {
       boolean swapped=true;
       while (swapped==true){
          swapped = false;
-         for (int i = 1; i < grades.length; i++) {
-            if (grades[i - 1].compareTo(grades[i]) > 0) {
-               T temp = grades[i - 1];
-               grades[i - 1] = grades[i];
-               grades[i] = temp;
+         for (int i = 1; i < grades.length-1; i++) {
+            if (grades[i].compareTo(grades[i+1]) > 0) {
+               T temp = grades[i];
+               grades[i ] = grades[i+1];
+               grades[i+1] = temp;
                swapped = true;
             }
          }
