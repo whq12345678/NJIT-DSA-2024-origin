@@ -19,7 +19,7 @@ public class StackFactory {
     * @return The stack object.
     */
     public static StackInterface<Integer> createIntegerStack() {
-      return new StackImplementation<>();
+      return new StackImplementation<Character>();
    }
 
    /**
