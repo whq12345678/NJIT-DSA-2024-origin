@@ -1,7 +1,8 @@
 package oy.tol.tra;
 
 import java.util.function.ObjDoubleConsumer;
- * An implementation of the StackInterface.
+ 
+* An implementation of the StackInterface.
  * <p>
  * TODO: Students, implement this so that the tests pass.
  * 
