@@ -18,3 +18,8 @@ public  class Algorithms{
                 n--;
             }
         }
+ private static <K extends Comparable<K>, V>  void swap(Pair<K, V>[] arr, int i, int j) {
+            Pair<K, V> temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
